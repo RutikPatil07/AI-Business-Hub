@@ -23,7 +23,7 @@ function Chat() {
     setLoading(true);
 
     try {
-      const res = await axios.post("https://ai-business-backend-7g9s.onrender.com/chat", {
+      const res = await axios.post("https://ai-business-hub-1.onrender.com/chat", {
         message: userText,
       });
 

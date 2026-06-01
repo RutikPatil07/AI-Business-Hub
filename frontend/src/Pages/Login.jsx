@@ -10,7 +10,7 @@ function Login() {
 
   const loginUser = async () => {
     try {
-      const res = await axios.post("https://ai-business-backend-7g9s.onrender.com/login", {
+      const res = await axios.post("https://ai-business-hub-1.onrender.com/login", {
         email,
         password,
       });
