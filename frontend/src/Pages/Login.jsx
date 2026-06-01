@@ -10,7 +10,7 @@ function Login() {
 
   const loginUser = async () => {
     try {
-      const res = await axios.post("http://127.0.0.1:5000/login", {
+      const res = await axios.post("https://ai-business-backend-7g9s.onrender.com/login", {
         email,
         password,
       });
