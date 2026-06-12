@@ -16,8 +16,12 @@ app.config["JWT_SECRET_KEY"] = "secret-key"
 jwt = JWTManager(app)
 
 # Groq Client
+groq_key = os.getenv("GROQ_API_KEY")
+
+print("GROQ KEY FOUND:", bool(groq_key))
+
 client = Groq(
-    api_key=os.getenv("GROQ_API_KEY")
+    api_key=groq_key
 )
 
 # ---------------- HOME ----------------
